@@ -1,0 +1,20 @@
+<button class="addChannel" (click)="OpenChannelForm()">Add channel</button>
+
+<div id="addChannel-wrapper" *ngIf="isShown">
+
+  <form class="FormAddChannel" (submit)="submitForm()">
+    <label>Enter name <br>
+      <input type="text" name="channels.name" [(ngModel)]="channel.name">
+    </label>
+    <br>
+    <label>Enter url <br>
+      <input type="text" name="channels.url" [(ngModel)]="channel.url">
+    </label>
+    <br>
+    <button type="submit">add Channel</button>
+    <button type="reset">reset</button>
+    <button type="button" (click)="CloseChannelForm()">close</button>
+  </form>
+
+</div>
+<hr>

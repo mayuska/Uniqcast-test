@@ -1,0 +1,48 @@
+$clickable: #28a46a;
+$LightFont : #ffffff;
+
+$thBorder : #7c7c7c;
+$tdBorder : #c4c4c4;
+
+
+table{
+  width: 96%;
+  margin: 2%;
+  text-align: left;
+  border-collapse: collapse;
+
+  .header, .list{
+    position: relative;
+  }
+
+  .header {
+    border-bottom: 0.01em solid $thBorder;
+    padding-bottom: 0.5em;
+  }
+
+  .actions{
+    float: right;
+    margin-right: 0.5em;
+  }
+
+  .list{
+    border-bottom: 0.01em solid $tdBorder;
+
+    td{
+      padding: 0.5em 0;
+    }
+
+    button {
+      border: 0.01em solid $thBorder;
+      background-color: transparent;
+      box-shadow:none;
+      -webkit-appearance: none;
+      padding: 0.3em 0.9em;
+      cursor: pointer;
+      &:hover{
+        color: $LightFont;
+        background-color: $clickable;
+      }
+    }
+  }
+}

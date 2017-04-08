@@ -1,0 +1,21 @@
+<table *ngIf="isShown">
+    <tr class="header">
+        <th>Id</th>
+        <th>Name</th>
+        <th>Url</th>
+        <th class="actions">Actions</th>
+    </tr>
+    <tr class="list" *ngFor="let channel of channels">
+        <td>{{channel.id}}</td>
+        <td>{{channel.name}}</td>
+        <td>{{channel.url}}</td>
+        <td class="actions">
+            <button type="button" class="edit" (click)="update.setChannel(channel)">Edit</button>
+            <button type="button" class="delete" (click)="deleteChannel(channel, index)">Delete</button>
+        </td>
+    </tr>
+</table>
+<update-channel #update></update-channel>
+<div style="clear: both"></div>
+
+

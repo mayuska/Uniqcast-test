@@ -1,0 +1,12 @@
+<div class="editChannel-wrapper" *ngIf="isShown">
+    <label>Name: <br>
+        <input name="channel.name" [(ngModel)]="channel.name">
+    </label>
+    <br>
+    <label>Url: <br>
+        <input name="channel.url" [(ngModel)]="channel.url">
+    </label>
+    <br>
+    <button type="button" (click)="updateChannel()">Save</button>
+    <button type="button" (click)="dismissForm()">Dismiss</button>
+</div>

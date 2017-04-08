@@ -1,0 +1,33 @@
+$green : #28a46a;
+$LightFont : #ffffff;
+
+.addChannel{
+  background-color: $green;
+  color: $LightFont;
+  border: none;
+  padding: 1em 1.5em;
+}
+
+#addChannel-wrapper {
+  margin: 1em 0.2em;
+  border: 0.01em solid $green;
+  width: 20%;
+
+  form{
+    padding: 1em;
+
+    input{
+      margin: 0.3em 0 1em 0.5em;
+    }
+
+    button{
+      margin: 1em 0.5em 0 0;
+      border: none;
+      padding: 0.5em 1em;
+      &[type="submit"]{
+        background-color: $green;
+        color: $LightFont;
+      }
+    }
+  }
+}
